@@ -1,0 +1,15 @@
+<img style="width:900px" src="a.png"/>
+<img id="eyes" style="position:absolute; width:900px; left:0px; top:0px;" src="b.png"/>
+<br/>
+<input oninput="move(event)" type="range" value="0" min="-10" max="25" step="1"/>
+
+<script>
+
+function move(e){
+
+document.getElementById("eyes").style.left = e.target.value + "px"
+
+}
+
+
+</script>
